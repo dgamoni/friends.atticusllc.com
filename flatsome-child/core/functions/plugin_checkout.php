@@ -19,7 +19,7 @@ function before_checkout_form_message() {
 	if( is_product_limit_message() ) {
 		$cur_user_id = get_current_user_id();
 		$user = get_user_by('id', $cur_user_id);
-		$notice_text = sprintf( 'Hey %1$s! You can only order 2 products of the same sku each 3 month period!', $user->display_name);
+		$notice_text = sprintf( 'Hi %1$s! You can only order 2 products of the same sku each 3 month period.', $user->display_name);
 		wc_print_notice( $notice_text, 'error' ); 
 	}
 
@@ -95,7 +95,7 @@ function is_product_limit_message() {
 				
 				$current_sku_inf .= $_product->get_sku();
 				$user = get_user_by('id', $cur_user_id);
-				$notice_text = sprintf( 'Hey %1$s! You can only order 2 products of the same sku each 3 month period!', $user->display_name);
+				$notice_text = sprintf( 'Hi %1$s! You can only order 2 products of the same sku each 3 month period.', $user->display_name);
 				$notice_text2 = sprintf( 'Product SKU: %1$s you already by %2$s ', $_product->get_sku(), $key );
 
 				//wc_print_notice( $notice_text, 'error' );
@@ -151,7 +151,7 @@ function message_before_checkout_button() {
 
 				$current_sku_inf .= '<p>'.$_product->get_name(). '</p>';
 				$user = get_user_by('id', $cur_user_id);
-				$notice_text = sprintf( 'Hey %1$s You can only order 2 products of the same sku each 3 month period! Product %2$s you already by %3$s ', $user->display_name, $_product->get_sku(), $key );
+				$notice_text = sprintf( 'Hi %1$s You can only order 2 products of the same sku each 3 month period. Product %2$s you already by %3$s ', $user->display_name, $_product->get_sku(), $key );
 
 				//wc_print_notice( $notice_text, 'error' );
 				//var_dump('yes');

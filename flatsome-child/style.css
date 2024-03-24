@@ -14,3 +14,144 @@ Version: 3.0
 
 
 }
+
+.single-product .variations tr {
+	display: flex;
+    flex-direction: column;
+}
+.single-product .variations table {
+    margin-bottom: 0;
+}
+.tawcvs-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.variations .tawcvs-swatches .swatch {
+	flex-basis: 48%;
+    margin-right: 0px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: all .3s;
+    margin-bottom: 15px;
+    color: #334862;
+    opacity: 1;
+    background-color: transparent;
+    line-height: 40px;
+    height: 40px;
+}
+.variations .tawcvs-swatches .swatch.selected {
+    box-shadow: none;
+    background-color: #333;
+    color: #FFF;
+}
+.woocommerce-variation-price {
+    /*display: none;*/
+}
+.pet_name-wrapper tr {
+		display: flex;
+    flex-direction: column;
+}
+table.wccpf_fields_table.pet_name-wrapper td {
+    padding: 5px 0px;
+    vertical-align: middle;
+    border-bottom: none;
+}
+.wccpf-fields-group-1 {
+	    margin-bottom: 15px;
+}
+.single-product .product-info .price {
+	margin: 2em 0;
+	margin-bottom: 100px;
+}
+.price_after_click {
+	position: absolute;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+    transition: all .3s;
+    /*top: -19px;*/
+        top: -45px;
+    left: 0;
+    background-color: white;
+    font-weight: normal;
+    padding: 20px;
+        width: 245px;
+
+/*        top: -44px;
+    left: 97px;*/
+}
+.price_after_click:hover {
+	cursor: pointer;
+}
+span.amount {
+    position: relative;
+}
+.price_after_click_helper {
+	position: absolute;
+}
+.price_after_click_helper {
+	font-size: 17px;
+    font-weight: normal;
+   /* top: 49px;*/
+   top: 21px;
+    left: -81px;
+    padding: 20px;
+    background-color: white;
+        line-height: 21px;
+            width: 280px;
+         color: #222;  
+
+/*         top: 22px;
+    left: -22px;  */   
+}
+.price_after_click:after {
+	/*content: 'Click on the button to view Atticus Friends & Family price';*/
+}
+.product-summary ins {
+    position: relative;
+}
+.product-summary ins .woocommerce-Price-amount.amount {
+	display: none;
+}
+
+.add_to_cart_disable.button.alt {
+    color:#fff;
+    cursor:not-allowed;
+    background-color:#999;
+}
+.plugin-message {
+    display: none;
+}
+.live-search-results {
+    background-color: #2e92bf;
+}
+.onsale {
+        margin-left: 5px;
+    color: black;
+}
+.price ins {
+    display: none;
+}
+.product-page-price.price ins {
+        display: inline-block;
+}
+/*.search-price ins {
+    display: none;
+}*/
+.product_list_widget ins .woocommerce-Price-amount.amount {
+    display: none;
+}
+/*.search-price ins {
+    display: none;
+}
+.search-price .sale_search {
+    display: block !important;
+}*/

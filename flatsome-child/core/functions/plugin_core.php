@@ -150,7 +150,7 @@ function check_limit_orderproduct_by_sku() {
 
 				$current_sku_inf .= $_product->get_sku();
 				$user = get_user_by('id', $cur_user_id);
-				$notice_text = sprintf( 'Hey %1$s You can only order 2 products of the same sku each 3 month period! Product %2$s you already by %3$s ', $user->display_name, $_product->get_sku(), $key );
+				$notice_text = sprintf( 'Hi %1$s. You can only order 2 products of the same sku each 3 month period. Product %2$s you already by %3$s ', $user->display_name, $_product->get_sku(), $key );
 
 				wc_print_notice( $notice_text, 'error' );
 				//var_dump('yes');
